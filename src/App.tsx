@@ -308,19 +308,28 @@ export default function App() {
                 </div>
               </div>
               <div className="bg-white p-8 md:p-12 rounded-3xl shadow-2xl">
-                <form className="space-y-6" onSubmit={(e) => e.preventDefault()}>
+                <form 
+                  className="space-y-6" 
+                  action="mailto:admin@waypointuniting.au" 
+                  method="GET" 
+                  encType="text/plain"
+                >
                   <div>
                     <label className="block text-sm font-bold text-slate-400 uppercase tracking-widest mb-2">Full Name</label>
-                    <input type="text" className="w-full px-6 py-4 bg-slate-50 border-none rounded-xl focus:ring-2 focus:ring-accent outline-none transition-all" placeholder="John Doe" />
+                    <input name="name" type="text" className="w-full px-6 py-4 bg-slate-50 border-none rounded-xl focus:ring-2 focus:ring-accent outline-none transition-all" placeholder="John Doe" required />
                   </div>
                   <div>
                     <label className="block text-sm font-bold text-slate-400 uppercase tracking-widest mb-2">Email Address</label>
-                    <input type="email" className="w-full px-6 py-4 bg-slate-50 border-none rounded-xl focus:ring-2 focus:ring-accent outline-none transition-all" placeholder="john@example.com" />
+                    <input name="email" type="email" className="w-full px-6 py-4 bg-slate-50 border-none rounded-xl focus:ring-2 focus:ring-accent outline-none transition-all" placeholder="john@example.com" required />
                   </div>
-                  <button className="w-full bg-accent text-white py-5 rounded-xl font-black uppercase tracking-widest hover:bg-blue-600 transition-all shadow-lg shadow-accent/20">
+                  <button type="submit" className="w-full bg-accent text-white py-5 rounded-xl font-black uppercase tracking-widest hover:bg-blue-600 transition-all shadow-lg shadow-accent/20">
                     Confirm My Visit
                   </button>
-                  <p className="text-center text-xs text-slate-400">We'll send you a quick guide on what to expect.</p>
+                  <p className="text-center text-xs text-slate-400">
+                    <a href="https://www.waypointuniting.au/plan-a-visit/" className="text-accent underline hover:text-blue-600 transition-colors">
+                      View our Plan a Visit guide
+                    </a>
+                  </p>
                 </form>
               </div>
             </div>
