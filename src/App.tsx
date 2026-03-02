@@ -4,7 +4,7 @@
  */
 
 import React, { useRef } from "react";
-import { motion, useScroll, useTransform } from "motion/react";
+import { motion, useScroll, useTransform } from "framer-motion";
 import { 
   Calendar, 
   MapPin, 
@@ -48,7 +48,7 @@ const GeometricBackground = () => (
 );
 
 export default function App() {
-  const containerRef = useRef(null);
+  const containerRef = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: containerRef,
     offset: ["start start", "end end"]
