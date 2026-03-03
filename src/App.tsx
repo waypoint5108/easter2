@@ -70,6 +70,7 @@ export default function App() {
             </div>
           </div>
           <div className="hidden md:flex items-center gap-8 text-sm font-medium uppercase tracking-widest text-slate-500">
+            <a href="https://www.waypointuniting.au" target="_blank" rel="noopener noreferrer" className="hover:text-accent transition-colors">Main Website</a>
             <a href="#events" className="hover:text-accent transition-colors">Events</a>
             <a href="#about" className="hover:text-accent transition-colors">About</a>
             <a href="#visit" className="bg-accent text-white px-6 py-2 rounded-full hover:shadow-lg hover:shadow-accent/20 transition-all">Plan a Visit</a>
